@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="refresh" content="0;url=http://www.robocon.in">    
     <title>MIT Tech Team</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <style>
@@ -15,94 +16,10 @@
             flex-direction: column;
             justify-content: center;
         }
-
-        #timer {
-            display: inline-block;
-            /* background-color: rgba(0, 0, 0, 0.2); */
-            border-radius: 10px;
-            padding: 20px;
-            /* box-shadow: 0 5px 15px rgba(0,0,0,0.3); */
-        }
-
-        .time-unit {
-            display: inline-block;
-            background-color: rgba(0, 0, 0, 0.2); /* Adds background to each unit */
-            border-radius: 10px; /* Rounded corners for each unit */
-            margin: 0 5px; /* Adjust spacing between units */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Soft shadow for depth */
-            padding: 10px 20px; /* Padding around numbers */
-            animation: none; /* Removes the pulse animation from each unit, optional */
-        }
-
-        .number {
-            font-size: 5rem; /* Adjusted for individual unit size */
-            font-weight: 700;
-            display: block; /* Ensures numbers are centered */
-        }
-
-        .unit {
-            font-size: 1.2rem; /* Adjust size as needed */
-            font-weight: 400;
-            display: block; /* Ensures text is centered below number */
-        }
-
-        .timer-label {
-            font-size: 24px;
-            margin-bottom: 30px;
-            font-weight: 400;
-            letter-spacing: 1px;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(0.95); }
-            70% { transform: scale(1); }
-            100% { transform: scale(0.95); }
-        }
-
-        #timer .time-unit {
-            animation: pulse 1s infinite;
-        }
     </style>
 </head>
 <body>
     <h1>MIT Tech Team</h1>
-    <div class="timer-label">Time to Robocon 2024</div>
-    <div id="timer">
-        <div class="time-unit">
-            <div class="number" id="days">00</div>
-            <div class="unit">Days</div>
-        </div>
-        <div class="time-unit">
-            <div class="number" id="hours">00</div>
-            <div class="unit">Hours</div>
-        </div>
-        <div class="time-unit">
-            <div class="number" id="minutes">00</div>
-            <div class="unit">Minutes</div>
-        </div>
-        <div class="time-unit">
-            <div class="number" id="seconds">00</div>
-            <div class="unit">Seconds</div>
-        </div>
-    </div>
-
-    <script>
-        var countDownDate = new Date("July 13, 2024 00:00:00").getTime();
-
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-
-            document.getElementById("days").innerHTML = Math.floor(distance / (1000 * 60 * 60 * 24));
-            document.getElementById("hours").innerHTML = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            document.getElementById("minutes").innerHTML = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            document.getElementById("seconds").innerHTML = Math.floor((distance % (1000 * 60)) / 1000);
-
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("timer").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
+    <p>If you are not redirected automatically, <a href="http://www.secondwebsite.com">click here</a>.</p>
 </body>
 </html>
